@@ -54,7 +54,7 @@ a {
 }
 
 .requestbutton {
-    /* width: 138px; */
+    width: 138px;
     height: 41px;
     background: #FFFFFF;
     border: 1.01887px solid #FFFFFF;
@@ -63,7 +63,7 @@ a {
     color: #33357D;
     border: 1px solid #33357D;
     font-weight: 700;
-    /* font-size: 11px; */
+    font-size: 11px;
 }
 
 .logo {
