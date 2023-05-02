@@ -36,12 +36,6 @@ export default {
   color: #33357D;
 }
 
-* {
-  font-family: nunitoSemiBold;
-  /* width: 100%; */
-  max-width: 1490px;
-  margin: 0 auto;
-}
 
 .primaryButton {
   width: 208.67px;

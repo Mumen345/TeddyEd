@@ -29,12 +29,12 @@ export default {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 70px;
     color: #ffffff;
     gap: 200px;
-    padding: 0 30px;
-    margin-top: 3rem;
-
+    padding: 17px;
+    margin: 2rem 0 0;
+    width: 80%;
+    max-width: 1500px;
 
 }
 
@@ -69,5 +69,9 @@ a {
 .logo {
     width: 138px;
 
+}
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 0rem;
 }
 </style>

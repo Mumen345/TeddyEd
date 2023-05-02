@@ -2,27 +2,26 @@
   <div class="hello">
     <NavBar />
     <div class="writeUp">
-      <p class="heroHeader primaryColor">Automate school operations. <br>Keep the focus on the child. </p>
-      <p class="primaryColor subHeader">An intuitive school management system (SMS ) that helps school administration
+      <h1 class="heroHeader primaryColor">Automate school operations. <br>Keep the focus on the child. </h1>
+      <h1 class="primaryColor subHeader">An intuitive school management system (SMS ) that helps school administration
         teams
         manage
-        peripheral services and operational tasks.</p>
+        peripheral services and operational tasks.</h1>
       <div class="buttonDiv">
         <button class="primaryButton">Request Info</button>
         <button class="secondaryButton">Learn More</button>
       </div>
     </div>
+    <img class="" src="../assets/mockup.svg" alt="" srcset="">
   </div>
 </template>
 
 <script>
-import { MDBContainer } from "mdb-vue-ui-kit";
 import NavBar from "./NavBar.vue";
 
 export default {
   name: "HeroSection",
   components: {
-    MDBContainer,
     NavBar,
   },
   props: {
@@ -58,7 +57,7 @@ export default {
 .subHeader {
   width: 677px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 40px;
   text-align: center;
