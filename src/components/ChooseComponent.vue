@@ -1,7 +1,7 @@
 <template>
   <div class="choose_container">
     <div></div>
-    <div><img src="../assets/mobile_mockup.svg" alt="" srcset=""></div>
+    <div><img class="phone" src="../assets/mobile_mockup.svg" alt="" srcset=""></div>
     <div></div>
   </div>
 </template>
@@ -26,6 +26,10 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.phone {
+  width: 100%;
 }
 
 @media screen and (max-width: 1138px) {
