@@ -1,12 +1,13 @@
 <template>
     <div class="navBar">
         <img class="logo" src="../assets/teddyed-logo.svg" alt="" srcset="">
-        <ul class="linkDiv">
+        <ul class="linkDiv web">
             <router-link role="link" to="/">Home</router-link>
             <router-link role="link" to="/modules">Modules</router-link>
             <router-link role="link" to="/faq">FAQ</router-link>
         </ul>
-        <button class="requestbutton">Request Information</button>
+        <button class="requestbutton web">Request Information</button>
+        <i class="fa-solid fa-bars-staggered mobile"></i>
     </div>
 </template>
 
@@ -21,13 +22,19 @@ export default {
 </script>
 
 <style scoped>
+ .mobile {
+        display: none;
+    }
+    .web {
+        display:block;
+    }
 .navBar {
     background: #33357D;
     box-shadow: 0px 0px 41.5628px rgba(24, 26, 32, 0.07);
     border-radius: 17px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: #ffffff;
     gap: 200px;
@@ -35,6 +42,7 @@ export default {
     margin: 2rem 0 0;
     width: 80%;
     max-width: 1500px;
+    padding:15px 45px
 
 }
 
@@ -73,5 +81,40 @@ a {
 ol, ul, dl {
     margin-top: 0;
     margin-bottom: 0rem;
+}
+a {
+    font-weight: medium;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize !important;
+}
+.router-link-exact-active {
+  color: #7750A1;
+  font-weight: bold;
+  text-decoration: underline;
+}
+@media screen and (max-width: 1138px) {
+    .mobile {
+        display: block
+    }
+    .web {
+        display:none;
+    }
+    .navBar {
+    background: #33357D;
+    box-shadow: 0px 0px 41.5628px rgba(24, 26, 32, 0.07);
+    border-radius: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    gap: 200px;
+    padding: 17px;
+    margin: 2rem 0 0;
+    width: 90%;
+    max-width: 1500px;
+    padding:20px 45px
+}
 }
 </style>

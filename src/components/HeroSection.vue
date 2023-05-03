@@ -12,7 +12,11 @@
         <button class="secondaryButton">Learn More</button>
       </div>
     </div>
-    <img class="" src="../assets/mockup.svg" alt="" srcset="">
+    <div>
+      <img class="mocukup" src="../assets/mockup.svg" alt="" srcset="">
+      <img class="mobileImages" src="../assets/Teddy_Module.svg" alt="" srcset="">
+      <img class="mobileImages" src="../assets/Teddy_Dashboard.svg" alt="" srcset="">
+    </div>
   </div>
 </template>
 
@@ -32,6 +36,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.mobileImages {
+  display:none;
+}
 .hello {
   background-image: url("../assets/hero_background.svg");
   height: 756px;
@@ -42,6 +49,9 @@ export default {
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .heroHeader {
@@ -78,5 +88,83 @@ export default {
   align-items: center;
   padding: 0px;
   gap: 45.91px;
+}
+@media screen and (max-width: 1138px) {
+  .heroHeader {
+    font-style: normal;
+    font-weight: 900;
+    width:80%;
+    font-size: 45px;
+    line-height: 143.52%;
+    text-align: center;
+    color: #33357D;
+    font-family: nunitoBlack;
+  }
+  .subHeader {
+    width: 80%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .hello {
+    background-image: url("../assets/hero_background.svg");
+  height: 756px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.mocukup {
+  width:500px
+}
+.buttonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+}
+@media screen and (max-width: 500px) {
+  .subHeader {
+    width: 90%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .mocukup {
+  display:none;
+}
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  width:100%;
+}
+.primaryButton {
+  width:80%;
+}
+.secondaryButton {
+  width:80%;
+}
+}
+@media screen and (max-width: 650px) {
+  .mobileImages {
+  display:block;
+}
 }
 </style>
