@@ -41,6 +41,7 @@ export default {
 }
 .hello {
   background-image: url("../assets/hero_background.svg");
+  /* background:#F3F6FF; */
   height: 756px;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,7 +111,8 @@ export default {
   }
   .hello {
     background-image: url("../assets/hero_background.svg");
-  height: 756px;
+    background:#F3F6FF;
+  height: 800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

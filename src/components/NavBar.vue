@@ -120,7 +120,7 @@ a {
 @media screen and (max-width: 430px) {
     .navBar {
         gap: 100px !important;
-        padding: 17px;
+        padding: 20px 17px;
 
     }
     
