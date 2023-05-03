@@ -101,20 +101,32 @@ a {
         display:none;
     }
     .navBar {
-    background: #33357D;
-    box-shadow: 0px 0px 41.5628px rgba(24, 26, 32, 0.07);
-    border-radius: 17px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff;
-    gap: 200px;
-    padding: 17px;
-    margin: 2rem 0 0;
+        background: #33357D;
+        box-shadow: 0px 0px 41.5628px rgba(24, 26, 32, 0.07);
+        border-radius: 17px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+        gap: 200px;
+        padding: 17px;
+        margin: 2rem 0 0;
     width: 90%;
     max-width: 1500px;
     padding:20px 45px
+}
+}
+@media screen and (max-width: 430px) {
+    .navBar {
+        gap: 100px !important;
+        padding: 17px;
+
+    }
+    
+.logo {
+    width: 80px;
+
 }
 }
 </style>

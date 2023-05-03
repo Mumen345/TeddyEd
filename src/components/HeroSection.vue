@@ -14,8 +14,8 @@
     </div>
     <div>
       <img class="mocukup" src="../assets/mockup.svg" alt="" srcset="">
-      <img class="mobileImages" src="../assets/Teddy_Module.svg" alt="" srcset="">
-      <img class="mobileImages" src="../assets/Teddy_Dashboard.svg" alt="" srcset="">
+      <!-- <img class="mobileImages" src="../assets/Teddy_Module.svg" alt="" srcset="">
+      <img class="mobileImages" src="../assets/Teddy_Dashboard.svg" alt="" srcset=""> -->
     </div>
   </div>
 </template>
@@ -134,6 +134,10 @@ export default {
   gap: 20px;
 }
 }
+@media screen and (max-width: 650px) {
+  .mobileImages {
+  display:block;
+}}
 @media screen and (max-width: 500px) {
   .subHeader {
     width: 90%;
@@ -162,9 +166,16 @@ export default {
   width:80%;
 }
 }
-@media screen and (max-width: 650px) {
-  .mobileImages {
-  display:block;
-}
+@media screen and (max-width: 430px) {
+  .heroHeader {
+    font-style: normal;
+    font-weight: 900;
+    width:90%;
+    font-size: 40px;
+    line-height: 143.52%;
+    text-align: center;
+    color: #33357D;
+    font-family: nunitoBlack;
+  }
 }
 </style>
