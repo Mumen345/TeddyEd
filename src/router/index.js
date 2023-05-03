@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import FaqPage from "../views/FaqPage.vue"
 import ContactView from "../views/ContactView.vue"
 import ModulesView from "../views/ModulesView.vue"
-
+import PageNotFound from "../views/PageNotFound.vue"
 const routes = [
   {
     path: '/',
@@ -24,6 +24,12 @@ const routes = [
     path: '/modules',
     name: 'modules',
     component: ModulesView
+  },
+  {
+    // path: "*",
+    path: "/:catchAll(.*)",
+    name: "NotFound",
+    component: PageNotFound,
   },
   {
     path: '/about',
