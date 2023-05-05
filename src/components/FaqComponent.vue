@@ -182,13 +182,12 @@ section {
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    padding: 19px;
+    padding: 14px;
     background: #ffffff;
-    font-weight: 600;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 22px !important;
     color: #52525A;
-    font-family: nunitoBlack;
+    font-family: nunitoSemiBold;
 }
 
 /* .accordion-label:hover {
