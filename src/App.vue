@@ -26,6 +26,11 @@ export default {
   src: url(./assets/Fonts/Nunito-Black.ttf);
 }
 
+@font-face {
+  font-family: nunitoMedium;
+  src: url(./assets/Fonts/Nunito-Medium.ttf);
+}
+
 .header {
   font-family: nunitoBlack;
   font-size: 48px;
