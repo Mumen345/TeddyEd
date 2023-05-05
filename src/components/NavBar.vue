@@ -6,7 +6,7 @@
             <router-link role="link" to="/modules">Modules</router-link>
             <router-link role="link" to="/faq">FAQ</router-link>
         </ul>
-        <button class="requestbutton web">Request Information</button>
+        <button @click.prevent="go" class="requestbutton web">Request Information</button>
         <i @click="openNav" class="fa-solid fa-bars-staggered mobile"></i>
         <div id="myNav" class="overlay">
             <a href="#" class="closebtn" @click="closeNav">&times;</a>
@@ -14,7 +14,7 @@
                 <router-link role="link" to="/">Home</router-link>
                 <router-link role="link" to="/modules">Modules</router-link>
                 <router-link role="link" to="/faq">FAQ</router-link>
-                <button class="primaryButton">Request Information</button>
+                <button @click.prevent="go" class="primaryButton">Request Information</button>
             </div>
         </div>
     </div>
@@ -34,6 +34,9 @@ export default {
 
         closeNav() {
             document.getElementById("myNav").style.height = "0%";
+        },
+        go() {
+            this.$router.push("/requestinfo")
         }
     },
 }

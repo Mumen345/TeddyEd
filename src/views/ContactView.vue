@@ -1,12 +1,14 @@
 <template>
     <div>
-
+        <ContactHero />
     </div>
 </template>
 
 <script>
-export default {
+import ContactHero from '@/components/ContactHero.vue';
 
+export default {
+    components: { ContactHero }
 }
 </script>
 

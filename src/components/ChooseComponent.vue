@@ -223,6 +223,7 @@ h5 {
   .choose_container {
     width: 100%;
     margin: 0rem auto 0;
+    flex-wrap: wrap;
   }
 
   .modules_container {
@@ -240,9 +241,8 @@ h5 {
 @media screen and (max-width: 1079px) {
   .modules_container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+
     padding: 0px;
     gap: 40px;
     margin: 2% auto;
@@ -299,7 +299,7 @@ h5 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 590px) {
 
 
   .choose_container {
