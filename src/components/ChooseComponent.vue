@@ -333,7 +333,7 @@ h5 {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
   }
 }
@@ -366,6 +366,14 @@ h5 {
   .headers_container {
     width: 100%;
     color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 316px) {
+  .choose_container {
+    width: 100% !important;
+    margin: 70px auto 0;
+    padding: 10px;
   }
 }
 </style>

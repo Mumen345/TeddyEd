@@ -43,8 +43,8 @@ export default {
 
 
 .primaryButton {
-  width: 208.67px;
-  height: 43.56px;
+  width: 208px;
+  height: 48px;
   background: #33357D;
   border-radius: 4.91281px;
   color: #ffffff;
@@ -54,11 +54,10 @@ export default {
 
 .secondaryButton {
   background: #F4F7FF;
-  /* Primary color */
   color: #33357D;
   border: 1px dashed #33357D;
   border-radius: 4.91281px;
-  width: 208.67px;
-  height: 43.56px;
+  width: 208px;
+  height: 48px;
 }
 </style>
