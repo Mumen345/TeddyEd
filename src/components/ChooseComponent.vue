@@ -100,7 +100,7 @@
           </div>
         </div>
         <div class="modules_div">
-          <img src="../assets/Attendance.svg" alt="">
+          <img src="../assets/assets.svg" alt="">
           <div class="">
             <h5>Assets</h5>
             <ul>
@@ -110,7 +110,7 @@
           </div>
         </div>
         <div class="modules_div">
-          <img src="../assets/Attendance.svg" alt="">
+          <img src="../assets/assessment.svg" alt="">
           <div class="">
             <h5>Assessment & Report Cards</h5>
             <ul>
