@@ -185,8 +185,8 @@ section {
     padding: 14px;
     background: #ffffff;
     cursor: pointer;
-    font-size: 22px !important;
-    color: #52525A;
+    font-size: 16px !important;
+    color: #3b3b40;
     font-family: nunitoSemiBold;
 }
 
