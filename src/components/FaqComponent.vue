@@ -170,7 +170,7 @@ input {
 
 section {
     width: 90%;
-    margin: 10% auto;
+    margin: 80px auto;
     max-width: 1500px;
 }
 
@@ -186,7 +186,7 @@ section {
     background: #ffffff;
     cursor: pointer;
     font-size: 16px !important;
-    color: #3b3b40;
+    color: #59595e;
     font-family: nunitoSemiBold;
 }
 

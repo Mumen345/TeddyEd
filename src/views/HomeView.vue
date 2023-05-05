@@ -3,6 +3,7 @@
     <HeroSection />
     <ChooseComponent />
     <FaqComponent />
+    <FooterComponent />
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import HeroSection from '@/components/HeroSection.vue'
 import ChooseComponent from '@/components/ChooseComponent.vue'
 import FaqComponent from '@/components/FaqComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
 
 export default {
   name: 'HomeView',
   components: {
     HeroSection,
     ChooseComponent,
-    FaqComponent
+    FaqComponent,
+    FooterComponent
   }
 }
 </script>

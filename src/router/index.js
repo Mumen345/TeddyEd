@@ -16,8 +16,8 @@ const routes = [
     component: FaqPage
   },
   {
-    path: '/contactus',
-    name: 'contactus',
+    path: '/requestinfo',
+    name: 'requestinfo',
     component: ContactView
   },
   {

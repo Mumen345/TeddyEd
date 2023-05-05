@@ -14,7 +14,7 @@
                 <router-link role="link" to="/">Home</router-link>
                 <router-link role="link" to="/modules">Modules</router-link>
                 <router-link role="link" to="/faq">FAQ</router-link>
-                <button class=" primaryButton">Request Information</button>
+                <button class="primaryButton">Request Information</button>
             </div>
         </div>
     </div>
@@ -173,11 +173,9 @@ a {
         width: 80px;
 
     }
-
 }
 
 /* Menu CSS */
-
 .overlay {
     height: 0%;
     width: 100%;
