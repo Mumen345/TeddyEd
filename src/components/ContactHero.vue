@@ -10,12 +10,12 @@
             <div class="info_div">
                 <img src="../assets/smartphone.svg" alt="location img">
                 <h5>Call Us</h5>
-                <p>+1 647 470 6921</p>
+                <p><a href="tel:+1 647 470 6921">+1 647 470 6921</a></p>
             </div>
             <div class="info_div">
                 <img src="../assets/letter.svg" alt="location img">
                 <h5>Email</h5>
-                <p>contact.this@example.com</p>
+                <p> <a href="mailto:contact.this@example.com">contact.this@example.com</a> </p>
             </div>
         </div>
         <InputComponents />
@@ -54,9 +54,16 @@ export default {
 
 }
 
+a {
+    font-size: 14px;
+    font-family: nunitoSemiBold;
+    line-height: 26px;
+    color: #33357D !important;
+    text-decoration: underline;
+}
+
 .hello {
     background-image: url("../assets/maps.png");
-    /* background:#F3F6FF; */
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;

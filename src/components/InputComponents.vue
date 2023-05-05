@@ -4,19 +4,19 @@
         <div class="input_container">
             <div class="input_div">
                 <label for="school_name">School Name</label>
-                <input type="text" required v-model="Request.school_name" name="school_name" placeholder="">
+                <input type="text" id="" required v-model="Request.school_name" name="school_name" placeholder="">
             </div>
             <div class="input_div">
                 <label for="requester_name">Name of Requester</label>
-                <input type="text" required v-model="Request.name" name="requester_name" placeholder="">
+                <input type="text" id="" required v-model="Request.name" name="requester_name" placeholder="">
             </div>
             <div class="input_div">
                 <label for="school_name">School Name</label>
-                <input type="email" required v-model="Request.email" name="school_name" placeholder="">
+                <input type="email" id="" required v-model="Request.email" name="school_name" placeholder="">
             </div>
             <div class="input_div">
                 <label for="school_name">School Name</label>
-                <input type="tel" required v-model="Request.phone" name="school_name" placeholder="">
+                <input type="tel" id="" required v-model="Request.phone" name="school_name" placeholder="">
             </div>
             <button @click.prevent="submitForm" class="primaryButton ">Submit</button>
         </div>
@@ -69,11 +69,11 @@ h3 {
 }
 
 input:focus {
-    outline: 1px solid #33357D;
+    outline: 1px solid #1967D2;
 }
 
 input {
-    background: #F3F6FF;
+    background: transparent;
     border: 1px solid #E4E4E4;
     border-radius: 8px;
     height: 49px;
@@ -100,6 +100,12 @@ label {
         width: 90%;
         margin: 0 auto;
         padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main_container {
+        background: #ffffff;
     }
 }
 </style>

@@ -1,10 +1,11 @@
 <template>
     <div>
         <div class="Faq_container">
-
             <NavBar />
         </div>
-        <FaqComponent />
+        <div class="move_down">
+            <FaqComponent />
+        </div>
         <FooterComponent />
     </div>
 </template>
@@ -28,5 +29,9 @@ export default {
     display: flex;
     justify-content: center;
     margin: 0 auto -4rem;
+}
+
+.move_down {
+    margin-top: 7rem;
 }
 </style>
