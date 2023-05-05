@@ -303,8 +303,9 @@ h5 {
 
 
   .choose_container {
-    width: 100%;
+    width: 100% !important;
     margin: 0rem auto 0;
+    padding: 30px;
   }
 
   .headers_container {
@@ -360,6 +361,11 @@ h5 {
     box-shadow: 0px 5.09954px 12.7488px rgba(64, 79, 104, 0.05);
     border-radius: 15px;
     height: auto;
+  }
+
+  .headers_container {
+    width: 100%;
+    color: #ffffff;
   }
 }
 </style>
