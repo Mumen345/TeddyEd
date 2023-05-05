@@ -3,5 +3,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
-createApp(App).use(store).use(router).mount('#app')
+import VueSimpleAccordion from 'vue-simple-accordion';
+import 'vue-simple-accordion/dist/vue-simple-accordion.css';
+createApp(App).use(store, VueSimpleAccordion).use(router).mount('#app')

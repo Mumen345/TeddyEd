@@ -11,6 +11,7 @@
     "mdb-vue-ui-kit": "^3.2.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
+    "vue-simple-accordion": "^0.1.0",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
@@ -18,7 +19,10 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "vue-cli-plugin-mdb5": "~2.1.0"
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "vue-cli-plugin-mdb5": "~2.1.0",
+    "webpack": "^5.82.0"
   },
   "browserslist": [
     "> 1%",
