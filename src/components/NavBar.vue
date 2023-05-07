@@ -13,7 +13,7 @@
         <div id="myNav" class="overlay">
             <a href="#" class="closebtn" @click="closeNav">&times;</a>
             <div class="overlay-content">
-                <router-link role="link" to="/">About</router-link>
+                <router-link role="link" to="/about">About</router-link>
                 <router-link role="link" to="/modules">Modules</router-link>
                 <router-link role="link" to="/faq">FAQ</router-link>
                 <button @click.prevent="go" class="primaryButton">Request Information</button>
