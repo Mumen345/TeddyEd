@@ -6,6 +6,7 @@
                 manage an entire school’s operations, including portals for student details and school information while
                 easing the current administrative load on administrators, teachers and staff.</p>
             <img src="../assets/student.svg" alt="people svg" srcset="">
+            <button @click.prevent="go" class="primaryButton first_div_button">Request Information</button>
         </div>
         <div class="card_container">
             <div class="card">
@@ -55,7 +56,11 @@
 
 <script>
 export default {
-
+    methods: {
+        go() {
+            this.$router.push("/requestinfo")
+        }
+    }
 }
 </script>
 
@@ -89,7 +94,6 @@ h1 {
     letter-spacing: 0.035em;
     text-align: left;
     color: #33357D;
-
 }
 
 .card p {
@@ -122,6 +126,11 @@ h1 {
     gap: 20px;
 }
 
+.first_div_button {
+    width: 50%;
+    margin: 30px auto 0;
+}
+
 @media screen and (max-width: 960px) {
     .what_container {
         background: #F3F6FF;
@@ -130,7 +139,7 @@ h1 {
         justify-content: center;
         align-items: center;
         padding: 33px;
-        gap: 117px;
+        gap: 40px;
     }
 
     .card {
@@ -149,8 +158,17 @@ h1 {
     .first_div {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 0px;
         width: 100%;
+    }
+
+    .first_div_button {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
     }
 }
 </style>
