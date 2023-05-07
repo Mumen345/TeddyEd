@@ -1,8 +1,10 @@
 <template>
     <div class="navBar">
-        <img class="logo" src="../assets/teddyed-logo.svg" alt="" srcset="">
+        <router-link role="link" to="/"> <img class="logo" src="../assets/teddyed-logo.svg" alt="" srcset="" />
+        </router-link>
+
         <ul class="linkDiv web">
-            <router-link role="link" to="/">Home</router-link>
+            <router-link role="link" to="/about">About</router-link>
             <router-link role="link" to="/modules">Modules</router-link>
             <router-link role="link" to="/faq">FAQ</router-link>
         </ul>
@@ -11,7 +13,7 @@
         <div id="myNav" class="overlay">
             <a href="#" class="closebtn" @click="closeNav">&times;</a>
             <div class="overlay-content">
-                <router-link role="link" to="/">Home</router-link>
+                <router-link role="link" to="/">About</router-link>
                 <router-link role="link" to="/modules">Modules</router-link>
                 <router-link role="link" to="/faq">FAQ</router-link>
                 <button @click.prevent="go" class="primaryButton">Request Information</button>
@@ -115,11 +117,7 @@ a {
     text-transform: capitalize !important;
 }
 
-.router-link-exact-active {
-    color: #7750A1;
-    font-weight: bold;
-    text-decoration: underline;
-}
+
 
 @media screen and (max-width: 1138px) {
     .mobile {
@@ -142,7 +140,7 @@ a {
         gap: 200px;
         padding: 17px;
         margin: 2rem 0 0;
-        width: 90%;
+        width: 85%;
         max-width: 1500px;
         padding: 20px 45px
     }
