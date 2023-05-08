@@ -29,6 +29,7 @@ export default {
     display: flex;
     justify-content: center;
     margin: 0 auto -4rem;
+    max-width: 1500px;
 }
 
 .move_down {

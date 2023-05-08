@@ -163,7 +163,6 @@ h1 {
     }
 
     .first_div_button {
-        margin-top: 30px;
         width: 100%;
     }
 

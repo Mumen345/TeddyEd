@@ -70,4 +70,10 @@ export default {
   width: 208px;
   height: 48px;
 }
+
+
+.router-link-exact-active {
+  font-weight: bold;
+  text-decoration: underline !important;
+}
 </style>
