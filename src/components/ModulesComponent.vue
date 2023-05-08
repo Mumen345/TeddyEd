@@ -39,6 +39,7 @@ export default {
 h1 {
     text-align: center;
     margin: 3.5rem 0;
+    font-size: 40px;
 }
 
 .modules_card_container {
