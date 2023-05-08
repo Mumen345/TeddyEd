@@ -57,7 +57,7 @@ export default {
   height: 48px;
   background: #33357D;
   border-radius: 4.91281px;
-  color: #ffffff;
+  color: #ffffff !important;
   outline: none;
   border: none;
 }

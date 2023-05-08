@@ -8,8 +8,8 @@
         manage
         peripheral services and operational tasks.</h1>
       <div class="buttonDiv">
-        <button class="primaryButton">Request Info</button>
-        <button class="secondaryButton">Learn More</button>
+        <button @click.prevent="requestInfo" class="primaryButton">Request Info</button>
+        <button @click.prevent="learnMore" class="secondaryButton">Learn More</button>
       </div>
     </div>
     <div>
@@ -30,6 +30,14 @@ export default {
   },
   props: {
     msg: String
+  },
+  methods: {
+    requestInfo() {
+      this.$router.push("/requestinfo")
+    },
+    learnMore() {
+      this.$router.push("/modules")
+    }
   }
 };
 </script>
@@ -193,4 +201,5 @@ export default {
     color: #33357D;
     font-family: nunitoBlack;
   }
-}</style>
+}
+</style>
