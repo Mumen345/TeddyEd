@@ -131,18 +131,16 @@ a {
     .navBar {
         background: #33357D;
         box-shadow: 0px 0px 41.5628px rgba(24, 26, 32, 0.07);
-        border-radius: 17px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         color: #ffffff;
-        gap: 200px;
-        padding: 17px;
+        gap: 2px;
         margin: 2rem 0 0;
-        width: 85%;
+        width: 90%;
         max-width: 1500px;
-        padding: 20px 45px
+        padding: 20px 30px
     }
 }
 
