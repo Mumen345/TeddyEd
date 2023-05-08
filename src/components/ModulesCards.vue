@@ -136,7 +136,17 @@ p {
 
 @media screen and (max-width: 940px) {
     .modules_div {
-        width: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        gap: 30px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid #E4E4E4;
+        height: auto;
     }
 }
 </style>
