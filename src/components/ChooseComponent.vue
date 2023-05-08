@@ -7,7 +7,7 @@
         communication and school asset management.</p>
     </div>
     <div class="modules_container">
-      <div class="first_div">
+      <div v-motion-pop-visible-once :delay="200" class="first_div">
         <div class="modules_div">
           <img src="../assets/Attendance.svg" alt="">
           <div class="">
@@ -64,8 +64,9 @@
           </div>
         </div>
       </div>
-      <div><img class="phone" src="../assets/mobile_mockup.svg" alt="" srcset=""></div>
-      <div class="first_div">
+      <div v-motion-pop-visible-once :delay="200"><img class="phone" src="../assets/mobile_mockup.svg" alt="" srcset="">
+      </div>
+      <div v-motion-pop-visible-once :delay="200" class="first_div">
         <div class="modules_div">
           <img src="../assets/Admission.svg" alt="">
           <div class="">

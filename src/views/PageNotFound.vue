@@ -2,7 +2,7 @@
     <div class="Not_container">
         <NavBar />
         <div>
-            <img class="notfound" src="../assets/404.svg" alt="" srcset="">
+            <img v-motion-pop-visible-once :delay="200" class="notfound" src="../assets/404.svg" alt="" srcset="">
         </div>
         <router-link role="link" class="go_home" to="/"><i class="fa-solid fa-house" style="color: #ffffff;"></i>Go
             Home</router-link>

@@ -2,7 +2,7 @@
   <div class="home">
     <HeroSection />
     <ChooseComponent />
-    <FaqComponent />
+    <FaqComponent v-motion-pop-visible-once :delay="200" />
     <FooterComponent />
   </div>
 </template>

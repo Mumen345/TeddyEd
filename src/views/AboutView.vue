@@ -1,7 +1,7 @@
 <template>
   <div>
     <AboutHero />
-    <OverView />
+    <OverView v-motion-slide-visible-once-bottom />
     <WhatisTeddyed />
     <FooterComponent />
   </div>

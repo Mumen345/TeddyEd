@@ -1,15 +1,19 @@
 <template>
     <div class="what_container">
         <div class="first_div">
-            <h1>What is TeddyEd</h1>
-            <p>TeddyEd helps automate routine tasks, and ensure time efficiency and error-free processes with TeddyEd to
+            <h1 v-motion-slide-visible-once-left :delay="800">What is TeddyEd</h1>
+            <p v-motion-slide-visible-once-left :delay="800">TeddyEd helps automate routine
+                tasks, and ensure time efficiency and
+                error-free processes with TeddyEd to
                 manage an entire school’s operations, including portals for student details and school information while
                 easing the current administrative load on administrators, teachers and staff.</p>
-            <img src="../assets/student.svg" alt="people svg" srcset="">
-            <button @click.prevent="go" class="primaryButton first_div_button">Request Information</button>
+            <img v-motion-slide-visible-once-left v-motion-slide-visible-left :delay="800" src="../assets/student.svg"
+                alt="people svg" srcset="">
+            <button v-motion-slide-visible-once-left @click.prevent="go" class="primaryButton first_div_button">Request
+                Information</button>
         </div>
         <div class="card_container">
-            <div class="card">
+            <div v-motion-slide-visible-once-right :delay="300" class="card">
                 <img src="../assets/Innovative.svg" alt="">
                 <div>
                     <h6>Innovative</h6>
@@ -17,7 +21,7 @@
                         administrative and operational tasks within a school environment.</p>
                 </div>
             </div>
-            <div class="card">
+            <div v-motion-slide-visible-once-right :delay="300" class="card">
                 <img src="../assets/userfriendly.svg" alt="">
                 <div>
                     <h6>User Friendly</h6>
@@ -26,7 +30,7 @@
                         and communication.</p>
                 </div>
             </div>
-            <div class="card">
+            <div v-motion-slide-visible-once-right :delay="300" class="card">
                 <img src="../assets/realtime.svg" alt="">
                 <div>
                     <h6>Real-Time Analytics</h6>
@@ -34,7 +38,7 @@
                         address student needs, monitor academic progress, and make data-driven decisions.</p>
                 </div>
             </div>
-            <div class="card">
+            <div v-motion-slide-visible-once-right :delay="300" class="card">
                 <img src="../assets/customizable.svg" alt="">
                 <div>
                     <h6>Customizable</h6>
@@ -42,7 +46,7 @@
                         ensuring that the system is tailored to the unique requirements of each educational institution.</p>
                 </div>
             </div>
-            <div class="card">
+            <div v-motion-slide-visible-once-right :delay="300" class="card">
                 <img src="../assets/affordable.svg" alt="">
                 <div>
                     <h6>Affordable</h6>

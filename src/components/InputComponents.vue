@@ -11,11 +11,11 @@
                 <input type="text" id="" required v-model="Request.name" name="requester_name" placeholder="">
             </div>
             <div class="input_div">
-                <label for="school_name">School Name</label>
+                <label for="school_name">Email</label>
                 <input type="email" id="" required v-model="Request.email" name="school_name" placeholder="">
             </div>
             <div class="input_div">
-                <label for="school_name">School Name</label>
+                <label for="school_name">Phone Number</label>
                 <input type="tel" id="" required v-model="Request.phone" name="school_name" placeholder="">
             </div>
             <button @click.prevent="submitForm" class="primaryButton ">Submit</button>

@@ -18,7 +18,7 @@
                 <p> <a href="mailto:contact.this@example.com">contact.this@example.com</a> </p>
             </div>
         </div>
-        <InputComponents />
+        <InputComponents v-motion-pop-visible-once :delay="200" />
         <FooterComponent />
     </div>
 </template>
