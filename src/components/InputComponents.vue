@@ -1,33 +1,34 @@
 <template>
     <div class="main_container">
         <h3 class="primaryColor">Request Information</h3>
-        <div class="input_container">
+        <form class="input_container">
             <div class="input_div">
                 <label for="school_name">School Name</label>
-                <input type="text" id="" required v-model="Request.school_name" name="school_name" placeholder="">
+                <input type="text" id="" required v-model="request.school_name" name="school_name" placeholder="">
             </div>
             <div class="input_div">
                 <label for="requester_name">Name of Requester</label>
-                <input type="text" id="" required v-model="Request.name" name="requester_name" placeholder="">
+                <input type="text" id="" required v-model="request.name" name="requester_name" placeholder="">
             </div>
             <div class="input_div">
                 <label for="school_name">Email</label>
-                <input type="email" id="" required v-model="Request.email" name="school_name" placeholder="">
+                <input type="email" id="" required v-model="request.email" name="school_name" placeholder="">
             </div>
             <div class="input_div">
                 <label for="school_name">Phone Number</label>
-                <input type="tel" id="" required v-model="Request.phone" name="school_name" placeholder="">
+                <input type="tel" id="" required v-model="request.phone" name="school_name" placeholder="">
             </div>
             <button @click.prevent="submitForm" class="primaryButton ">Submit</button>
-        </div>
+        </form>
     </div>
 </template>
 
 <script>
+import axios from "axios";
 export default {
     data() {
         return {
-            Request: {
+            request: {
                 name: "",
                 school_name: "",
                 email: "",
@@ -37,9 +38,22 @@ export default {
 
     },
     methods: {
+        validateEmail(email) {
+            const re =
+                /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))*$/;
+            return re.test(email);
+        },
         submitForm() {
+            if (this.request.email === "") {
+                alert("Please fill your email");
+                return false;
+            }
+            if (!this.validateEmail(this.request.email)) {
+                alert("Invalid email address");
+                return false;
+            }
+        },
 
-        }
     }
 }
 </script>

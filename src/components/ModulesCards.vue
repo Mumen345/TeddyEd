@@ -1,5 +1,5 @@
 <template>
-    <div v-motion-pop-visible-once :delay="200" class="modules_card_container">
+    <div class="modules_card_container">
         <div class="modules_div" v-for="item in items" :key="item.id">
             <img :src="item.link" alt="">
             <div class="">

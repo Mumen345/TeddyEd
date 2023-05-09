@@ -7,8 +7,7 @@
                 error-free processes with TeddyEd to
                 manage an entire school’s operations, including portals for student details and school information while
                 easing the current administrative load on administrators, teachers and staff.</p>
-            <img v-motion-slide-visible-once-left v-motion-slide-visible-left :delay="800" src="../assets/student.svg"
-                alt="people svg" srcset="">
+            <img v-motion-slide-visible-once-left :delay="800" src="../assets/student.svg" alt="people svg" srcset="">
             <button v-motion-slide-visible-once-left @click.prevent="go" class="primaryButton first_div_button">Request
                 Information</button>
         </div>

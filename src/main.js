@@ -3,5 +3,6 @@ import { createApp } from 'vue'
 import { MotionPlugin } from '@vueuse/motion'
 import App from './App.vue'
 import router from './router'
+// import Toasted from 'vue-toasted';
 import store from './store'
 createApp(App).use(store).use(MotionPlugin).use(router).mount('#app')

@@ -20,6 +20,23 @@ export default {
         NavBar,
         FaqComponent,
         FooterComponent
+    },
+    methods: {
+        validateEmail(email) {
+            const re =
+                /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))*$/;
+            return re.test(email);
+        },
+        submitForm() {
+            if (this.email === "") {
+                this.$toasted.error("Please fill your email");
+                return false;
+            }
+            if (!this.validateEmail(this.email)) {
+                this.$toasted.error("Invalid email address");
+                return false;
+            }
+        }
     }
 }
 </script>
