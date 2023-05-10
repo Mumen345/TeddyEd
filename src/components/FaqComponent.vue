@@ -185,7 +185,7 @@ section {
     padding: 14px;
     background: #ffffff;
     cursor: pointer;
-    font-size: 16px !important;
+    font-size: 18px !important;
     color: #59595e;
     font-family: nunitoSemiBold;
 }
@@ -214,8 +214,8 @@ section {
 .accordion-content p {
     margin: 0;
     color: #ffffff;
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 34px;
     font-family: nunitoMedium;
 }
 

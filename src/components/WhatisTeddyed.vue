@@ -79,7 +79,7 @@ export default {
 }
 
 .first_div p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 34px;
 }
 
@@ -100,15 +100,16 @@ h1 {
 }
 
 .card p {
-    font-size: 11.8989px;
-    line-height: 26px;
+    font-size: 15px;
+    line-height: 28px;
     font-family: nunitoSemibold;
 }
 
 .card h6 {
-    font-size: 15.2986px;
+    font-size: 20px;
     line-height: 21px;
     font-family: nunitoBlack;
+    color: #33357D;
 }
 
 .card {

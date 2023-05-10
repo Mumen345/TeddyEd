@@ -46,7 +46,7 @@ export default {
 }
 
 .about_header p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 261.9%;
     color: #33357D;
     font-family: nunitoSemiBold;
@@ -55,7 +55,7 @@ export default {
 .about_header h1 {
     width: auto;
     font-family: nunitoBlack !important;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 800;
     line-height: 159.52%;
     color: #33357D;

@@ -38,7 +38,7 @@ export default {
 
 .overview_container p {
     margin-top: 3rem;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 261.9%;
     color: #33357D;
     width: 75%;

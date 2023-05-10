@@ -99,15 +99,16 @@ export default {
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 21px;
     font-family: nunitoBlack;
 }
 
 p {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 34px;
     font-family: nunitoMedium;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 1525px) {

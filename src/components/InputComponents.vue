@@ -1,7 +1,7 @@
 <template>
     <div class="main_container">
         <h3 class="primaryColor">Request Information</h3>
-        <form class="input_container">
+        <div class="input_container">
             <div class="input_div">
                 <label for="school_name">School Name</label>
                 <input type="text" id="" required v-model="request.school_name" name="school_name" placeholder="">
@@ -19,7 +19,7 @@
                 <input type="tel" id="" required v-model="request.phone" name="school_name" placeholder="">
             </div>
             <button @click.prevent="submitForm" class="primaryButton ">Submit</button>
-        </form>
+        </div>
     </div>
 </template>
 
@@ -44,6 +44,14 @@ export default {
             return re.test(email);
         },
         submitForm() {
+            if (this.request.school_name === "") {
+                alert("School name is required");
+                return false;
+            }
+            if (this.request.name === "") {
+                alert("Please tell us your name");
+                return false;
+            }
             if (this.request.email === "") {
                 alert("Please fill your email");
                 return false;
