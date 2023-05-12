@@ -45,19 +45,24 @@ export default {
         },
         submitForm() {
             if (this.request.school_name === "") {
-                alert("School name is required");
+                this.$toast.error("School name is required");
                 return false;
             }
             if (this.request.name === "") {
-                alert("Please tell us your name");
+                this.$toast.error("Please tell us your name");
                 return false;
             }
             if (this.request.email === "") {
-                alert("Please fill your email");
+                this.$toast.error("Please fill your email");
                 return false;
             }
+
+            if (this.request.phone === "") {
+                this.$toast.error("Please fill your phone number");
+                return false
+            }
             if (!this.validateEmail(this.request.email)) {
-                alert("Invalid email address");
+                this.$toast.error("Invalid email address");
                 return false;
             }
         },
