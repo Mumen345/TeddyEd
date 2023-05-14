@@ -84,7 +84,7 @@
                 <div class="side_by_side">
                     <div class="input_div">
                         <label for="school_name">City</label>
-                        <input type="url" id="" required v-model="details.city" name="" placeholder="">
+                        <input type="text" id="" required v-model="details.city" name="" placeholder="">
                     </div>
                     <div class="input_div">
                         <label for="school_name">Zipcode</label>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="input_div">
                         <label for="school_name">Website</label>
-                        <input type="url" id="" required v-model="details.website" name="" placeholder="">
+                        <input type="text" id="" required v-model="details.website" name="" placeholder="">
                     </div>
 
                 </div>
@@ -124,7 +124,6 @@
                     <button @click.prevent="stepTwo" class="primaryButton ">Next</button>
                 </div>
             </div>
-            <Transition name="slide-fade"></Transition>
             <div class="input_container_last" v-if="showDiv3">
                 <div class="input_div">
                     <label>Module of Interest</label>
@@ -153,7 +152,7 @@
                     </div>
                 </div>
                 <div class="input_div">
-                    <label>Module of Interest</label>
+                    <label>What type of staff group does your school have</label>
                     <div class="check_box_div">
                         <input type="checkbox" id="attendance" value="attendance" v-model="details.groups">
                         <label for="attendance">Attendance</label>
@@ -168,10 +167,17 @@
                 <div class="side_by_side">
                     <div class="input_div">
                         <label for="school_name">TeddyEd skin (color preference)</label>
-                        <input type="number" id="" required v-model="details.skin" name="" placeholder="">
+                        <div class="check_box_div">
+                            <select v-model="details.skin" name="ddv" id="ddv">
+                                <option value="Color 1">Color 1</option>
+                                <option value="Color 2">Color 2</option>
+                                <option value="Color 3">Color 3</option>
+                                <option value="Color 4">Color 4</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="input_div">
-                        <label for="school_name">Number of students</label>
+                        <label for="school_name">Number of Classes</label>
                         <input type="number" id="" required v-model="details.class_number" name="" placeholder="">
                     </div>
                 </div>
@@ -203,12 +209,20 @@
                     <button @click.prevent="stepThree" class="primaryButton ">Next</button>
                 </div>
             </div>
+            <div class="success_container" v-if="showDiv4">
+                <h3 class="primaryColor">Thank You</h3>
+                <img src="../assets/OBJECTS.svg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur. Velit facilisi enim rutrum integer urna eu. Nunc lectus amet sit
+                    aliquet eros sit. Eget vitae est ut eget in tempor imperdiet nisl.</p>
+                <button class="primaryButton">Go home</button>
+            </div>
         </div>
 
     </div>
 </template>
 
 <script>
+import axios from 'axios';
 import NavBar from './NavBar.vue';
 export default {
     components: { NavBar, },
@@ -239,13 +253,14 @@ export default {
                 groups: [],
                 class_number: "",
                 skin: "",
-                school_type: "",
+                school_type: [],
                 module: "",
                 file: null
             },
             showDiv: true,
             showDiv2: false,
             showDiv3: false,
+            showDiv4: false,
         }
 
     },
@@ -257,102 +272,100 @@ export default {
         },
         nextStep() {
 
-            if (this.details.school_name === "") {
-                this.$toast.error("School name is required");
-                return false;
-            }
-            if (this.details.school_email === "") {
-                this.$toast.error("School email required");
-                return false;
-            }
-            if (!this.validateEmail(this.details.school_email)) {
-                this.$toast.error("Invalid School email");
-                return false;
-            }
-            if (this.details.contact_name === "") {
-                this.$toast.error("Primary Contact name required");
-                return false;
-            }
-            if (this.details.contact_email === "") {
-                this.$toast.error("Primary Contact email required");
-                return false;
-            }
-            if (!this.validateEmail(this.details.contact_email)) {
-                this.$toast.error("Invalid Contact email");
-                return false;
-            }
-            if (this.details.contact_phone === "") {
-                this.$toast.error("Contact Phone Number required");
-                return false;
-            }
-            if (this.details.contact_role === "") {
-                this.$toast.error("Contact role required");
-                return false;
-            }
-            if (this.details.billing_name === "") {
-                this.$toast.error("Billing name required");
-                return false;
-            }
+            // if (this.details.school_name === "") {
+            //     this.$toast.error("School name is required");
+            //     return false;
+            // }
+            // if (this.details.school_email === "") {
+            //     this.$toast.error("School email required");
+            //     return false;
+            // }
+            // if (!this.validateEmail(this.details.school_email)) {
+            //     this.$toast.error("Invalid School email");
+            //     return false;
+            // }
+            // if (this.details.contact_name === "") {
+            //     this.$toast.error("Primary Contact name required");
+            //     return false;
+            // }
+            // if (this.details.contact_email === "") {
+            //     this.$toast.error("Primary Contact email required");
+            //     return false;
+            // }
+            // if (!this.validateEmail(this.details.contact_email)) {
+            //     this.$toast.error("Invalid Contact email");
+            //     return false;
+            // }
+            // if (this.details.contact_phone === "") {
+            //     this.$toast.error("Contact Phone Number required");
+            //     return false;
+            // }
+            // if (this.details.contact_role === "") {
+            //     this.$toast.error("Contact role required");
+            //     return false;
+            // }
+            // if (this.details.billing_name === "") {
+            //     this.$toast.error("Billing name required");
+            //     return false;
+            // }
 
-            if (this.details.billing_email === "") {
-                this.$toast.error("Billing email required");
-                return false;
-            }
-            if (!this.validateEmail(this.details.billing_email)) {
-                this.$toast.error("Invalid Billing email");
-                return false;
-            }
-            if (this.details.billing_phone === "") {
-                this.$toast.error("Billing phone number required");
-                return false;
-            }
-            if (this.details.billing_role === "") {
-                this.$toast.error("Billing role required");
-                return false;
-            }
+            // if (this.details.billing_email === "") {
+            //     this.$toast.error("Billing email required");
+            //     return false;
+            // }
+            // if (!this.validateEmail(this.details.billing_email)) {
+            //     this.$toast.error("Invalid Billing email");
+            //     return false;
+            // }
+            // if (this.details.billing_phone === "") {
+            //     this.$toast.error("Billing phone number required");
+            //     return false;
+            // }
+            // if (this.details.billing_role === "") {
+            //     this.$toast.error("Billing role required");
+            //     return false;
+            // }
             this.showDiv = false;
             this.showDiv2 = true;
-            console.log(this.step)
         },
         prevStep() {
             this.showDiv = true;
             this.showDiv2 = false;
         },
         stepTwo() {
-            if (this.details.phone_one === "") {
-                this.$toast.error("Phone 1 required");
-                return false;
-            }
-            if (this.details.phone_two === "") {
-                this.$toast.error("Phone 2 required");
-                return false;
-            }
-            if (this.details.city === "") {
-                this.$toast.error("City required");
-                return false;
-            }
-            if (this.details.zipcode === "") {
-                this.$toast.error("zipcode required");
-                return false;
-            }
-            if (this.details.address === "") {
-                this.$toast.error("address required");
-                return false;
-            }
-            if (this.details.website === "") {
-                this.$toast.error("website url required");
-                return false;
-            }
+            // if (this.details.phone_one === "") {
+            //     this.$toast.error("Phone 1 required");
+            //     return false;
+            // }
+            // if (this.details.phone_two === "") {
+            //     this.$toast.error("Phone 2 required");
+            //     return false;
+            // }
+            // if (this.details.city === "") {
+            //     this.$toast.error("City required");
+            //     return false;
+            // }
+            // if (this.details.zipcode === "") {
+            //     this.$toast.error("zipcode required");
+            //     return false;
+            // }
+            // if (this.details.address === "") {
+            //     this.$toast.error("address required");
+            //     return false;
+            // }
+            // if (this.details.website === "") {
+            //     this.$toast.error("website url required");
+            //     return false;
+            // }
             this.showDiv2 = false;
             this.showDiv3 = true;
-            console.log(this.step)
         },
         prevStep2() {
             this.showDiv2 = true;
             this.showDiv3 = false;
         },
         stepThree() {
-            if (this.details.module === "") {
+            if (this.details.checkedNames.length === 0) {
                 this.$toast.error("Select a module");
                 return false
 
@@ -365,7 +378,7 @@ export default {
                 this.$toast.error("Students Number required");
                 return false
             }
-            if (this.details.groups === "") {
+            if (this.details.groups.length === 0) {
                 this.$toast.error("Select a group");
                 return false
             }
@@ -381,11 +394,15 @@ export default {
                 this.$toast.error("Select a skin color");
                 return false
             }
-            if (this.details.school_type === "") {
+            if (this.details.school_type.lenght === 0) {
                 this.$toast.error("Select a school type");
                 return false
             }
+            // this.Images_onUpload()
+            this.showDiv3 = false;
+            this.showDiv4 = true;
         },
+
         handleFileUpload() { this.details.file = this.$refs.file.files[0]; },
         Images_onUpload() {
             let formData = new FormData();
@@ -489,7 +506,10 @@ select {
 }
 
 label {
-    font-family: nunitoMedium;
+    font-family: nunitoBold;
+    font-size: 17px;
+
+
 }
 
 .input_div {
@@ -618,6 +638,20 @@ input[type=file]::file-selector-button:hover {
     width: 60%;
     margin: 5rem auto;
 
+}
+
+.success_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: nunitoMedium;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    width: 50%;
+    margin: 4rem auto;
+    gap: 20px;
 }
 
 @media screen and (max-width: 1100px) {
