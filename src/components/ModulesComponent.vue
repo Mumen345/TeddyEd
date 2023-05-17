@@ -54,7 +54,7 @@ h1 {
 }
 
 button {
-    width: 60%;
+    width: 20%;
 }
 
 .btn_div {
@@ -63,5 +63,11 @@ button {
     align-items: center;
     margin: 0 auto 5rem;
     width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    button {
+        width: 90%;
+    }
 }
 </style>

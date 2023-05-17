@@ -4,8 +4,8 @@
             <NavBar />
         </div>
         <div class="main_container">
-            <h3 class="primaryColor">Onboarding Requirements</h3>
             <div v-if="showDiv" class="input_container">
+                <h3 class="primaryColor">Onboarding Requirements</h3>
                 <div class="input_div">
                     <label for="school_name">School Name</label>
                     <input type="text" id="" required v-model="details.school_name" name="" placeholder="">
@@ -126,19 +126,11 @@
             </div>
             <div class="input_container_last" v-if="showDiv3">
                 <div class="input_div">
-                    <label>Module of Interest</label>
+                    <label>Module of Interest? <span> <small><i>(Select all that
+                                    applies)</i></small></span> </label>
                     <div class="check_box_div">
                         <input type="checkbox" id="jack" value="attendance" v-model="details.checkedNames">
                         <label for="jack">Attendance</label>
-
-                        <input type="checkbox" id="transport" value="transportation" v-model="details.checkedNames">
-                        <label for="transport">Transportation</label>
-
-                        <input type="checkbox" id="records" value="school records" v-model="details.checkedNames">
-                        <label for="records">School Records</label>
-
-                        <input type="checkbox" id="scheduling" value="scheduling" v-model="details.checkedNames">
-                        <label for="scheduling">Scheduling</label>
                     </div>
                 </div>
                 <div class="side_by_side">
@@ -150,12 +142,17 @@
                         <label for="school_name">Number of students</label>
                         <input type="number" id="" required v-model="details.students_number" name="" placeholder="">
                     </div>
+                    <div class="input_div">
+                        <label for="school_name">Number of Classes</label>
+                        <input type="number" id="" required v-model="details.class_number" name="" placeholder="">
+                    </div>
                 </div>
                 <div class="input_div">
-                    <label>What type of staff group does your school have</label>
+                    <label>What type of staff group does your school have? <span> <small><i>(Select all that
+                                    applies)</i></small></span> </label>
                     <div class="check_box_div">
-                        <input type="checkbox" id="attendance" value="attendance" v-model="details.groups">
-                        <label for="attendance">Attendance</label>
+                        <input type="checkbox" id="attendance" value="teaching" v-model="details.groups">
+                        <label for="attendance">Teaching</label>
 
                         <input type="checkbox" id="administrative" value="administrative" v-model="details.groups">
                         <label for="administrative">Administrative</label>
@@ -164,25 +161,10 @@
                         <label for="operations">Operations</label>
                     </div>
                 </div>
-                <div class="side_by_side">
-                    <div class="input_div">
-                        <label for="school_name">TeddyEd skin (color preference)</label>
-                        <div class="check_box_div">
-                            <select v-model="details.skin" name="ddv" id="ddv">
-                                <option value="Color 1">Color 1</option>
-                                <option value="Color 2">Color 2</option>
-                                <option value="Color 3">Color 3</option>
-                                <option value="Color 4">Color 4</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="input_div">
-                        <label for="school_name">Number of Classes</label>
-                        <input type="number" id="" required v-model="details.class_number" name="" placeholder="">
-                    </div>
-                </div>
+
                 <div class="input_div">
-                    <label>School Type</label>
+                    <label>School Type <span> <small><i>(Select all that
+                                    applies)</i></small></span> </label>
                     <div class="check_box_div">
                         <input type="checkbox" id="day_care" value="child care center" v-model="details.school_type">
                         <label for="day_care">Child care center</label>
@@ -198,12 +180,27 @@
                     </div>
                 </div>
 
-                <label for="day_care">Upload Logo</label>
-                <label for="images" class="drop-container">
-                    <span class="drop-title">Drop files here</span>
-                    or
-                    <input type="file" id="images" @change="handleFileUpload" accept="image/*" required>
-                </label>
+                <div class="side_by_side">
+                    <div class="input_div">
+                        <label for="school_name">TeddyEd skin (color preference)</label>
+                        <div class="check_box_div">
+                            <select v-model="details.skin" name="ddv" id="ddv">
+                                <option value="Color 1">Color 1</option>
+                                <option value="Color 2">Color 2</option>
+                                <option value="Color 3">Color 3</option>
+                                <option value="Color 4">Color 4</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div>
+                    <label for="">Upload Logo</label>
+                    <label for="images" class="drop-container">
+                        <input type="file" id="images" @change="handleFileUpload" accept="image/*" required>
+                    </label>
+                </div>
                 <div class="btn_div">
                     <button @click.prevent="prevStep2" class="secondaryButton ">Prev</button>
                     <button @click.prevent="stepThree" class="primaryButton ">Next</button>
@@ -212,9 +209,10 @@
             <div class="success_container" v-if="showDiv4">
                 <h3 class="primaryColor">Thank You</h3>
                 <img src="../assets/OBJECTS.svg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur. Velit facilisi enim rutrum integer urna eu. Nunc lectus amet sit
-                    aliquet eros sit. Eget vitae est ut eget in tempor imperdiet nisl.</p>
-                <button class="primaryButton">Go home</button>
+                <p>Your requirements have been successfully submited. <br> An implemention specialist will reach to
+                    you shortly.
+                </p>
+                <button @click.prevent="goHome" class="primaryButton">Go home</button>
             </div>
         </div>
 
@@ -471,6 +469,13 @@ input[type=number] {
     font-family: nunitoMedium;
     width: 100%;
     font-size: 13px;
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type=email] {
@@ -508,7 +513,7 @@ select {
 label {
     font-family: nunitoBold;
     font-size: 17px;
-
+    text-transform: capitalize;
 
 }
 
@@ -595,8 +600,7 @@ input[type=file]::file-selector-button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     border: 2px dashed #33357d;
     color: #444;

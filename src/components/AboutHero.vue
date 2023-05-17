@@ -4,7 +4,7 @@
             <NavBar />
         </div>
         <div class="about_header">
-            <h1>Single repository for student, teaching and administrative staff</h1>
+            <h1>Single repository for student, teaching and administrative staff.</h1>
             <p>TeddyEd is an innovative and comprehensive school management system designed to streamline administrative and
                 operational tasks within a school environment.</p>
         </div>
@@ -42,12 +42,12 @@ export default {
     justify-content: space-evenly;
     align-items: flex-start;
     padding: 0px;
-    gap: 10px;
+    gap: 40px;
 }
 
 .about_header p {
-    font-size: 16px;
-    line-height: 261.9%;
+    font-size: 17px;
+    line-height: 260%;
     color: #33357D;
     font-family: nunitoSemiBold;
 }
