@@ -8,119 +8,140 @@
     </div>
     <div class="modules_container">
       <div v-motion-pop-visible-once :delay="200" class="first_div">
-        <div class="modules_div">
-          <img src="../assets/Attendance.svg" alt="">
-          <div class="">
-            <h5>Attendance</h5>
-            <ul>
-              <li>Report student’s absence</li>
-              <li>Report student’s lateness</li>
-              <li>View attendance history</li>
-            </ul>
+        <router-link role="link" to="/modules/attendancemanagement">
+          <div class="modules_div">
+            <img src="../assets/Attendance.svg" alt="">
+            <div class="">
+              <h5>Attendance</h5>
+              <ul>
+                <li>Report student’s absence</li>
+                <li>Report student’s lateness</li>
+                <li>View attendance history</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="modules_div">
-          <img src="../assets/transportation.svg" alt="">
-          <div class="">
-            <h5>Transportation</h5>
-            <ul>
-              <li>Bus Tracking</li>
-              <li>Location Updates</li>
-              <li>View attendance history</li>
-            </ul>
+        </router-link>
+        <router-link role="link" to="/modules/transportmanagement">
+          <div class="modules_div">
+            <img src="../assets/transportation.svg" alt="">
+            <div class="">
+              <h5>Transportation</h5>
+              <ul>
+                <li>Bus Tracking</li>
+                <li>Location Updates</li>
+                <li>View attendance history</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="modules_div">
-          <img src="../assets/Events.svg" alt="">
-          <div class="">
-            <h5>Events</h5>
-            <ul>
-              <li>Teacher-led Class Events</li>
-              <li>School-wide Events</li>
-              <li>Parent Activities</li>
-            </ul>
+        </router-link>
+        <router-link role="link" to="/modules/schooleventmanagement">
+          <div class="modules_div">
+            <img src="../assets/Events.svg" alt="">
+            <div class="">
+              <h5>Events</h5>
+              <ul>
+                <li>Teacher-led Class Events</li>
+                <li>School-wide Events</li>
+                <li>Parent Activities</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="modules_div">
-          <img src="../assets/commnunications.svg" alt="">
-          <div class="">
-            <h5>Communications</h5>
-            <ul>
-              <li>Parent Communications</li>
-              <li>Staff & Student Interactions</li>
-              <li>Email, SMS, In-app Messaging</li>
-            </ul>
+        </router-link>
+        <router-link role="link" to="/modules/communicationsmanagement">
+          <div class="modules_div">
+            <img src="../assets/commnunications.svg" alt="">
+            <div class="">
+              <h5>Communications</h5>
+              <ul>
+                <li>Parent Communications</li>
+                <li>Staff & Student Interactions</li>
+                <li>Email, SMS, In-app Messaging</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="modules_div">
-          <img src="../assets/admin_portal.svg" alt="">
-          <div class="">
-            <h5>Administration Portal </h5>
-            <ul>
-              <li>Tracking applications</li>
-              <li>Managing interviews</li>
-              <li>Communicating with Parents</li>
-            </ul>
+        </router-link>
+        <router-link role="link" to="/modules/assetmanagement">
+          <div class="modules_div">
+            <img src="../assets/admin_portal.svg" alt="">
+            <div class="">
+              <h5>Administration Portal </h5>
+              <ul>
+                <li>Tracking applications</li>
+                <li>Managing interviews</li>
+                <li>Communicating with Parents</li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </router-link>
       </div>
       <div v-motion-pop-visible-once :delay="200"><img class="phone" src="../assets/mobile_mockup.svg" alt="" srcset="">
       </div>
       <div v-motion-pop-visible-once :delay="200" class="first_div">
-        <div class="modules_div">
-          <img src="../assets/Admission.svg" alt="">
-          <div class="">
-            <h5>Admission</h5>
-            <ul>
-              <li>Enrolment Forms</li>
-              <li>Admission Processing & Updates</li>
-              <li>School Records</li>
-            </ul>
+        <router-link role="link" to="/modules/admissionmanagement">
+          <div class="modules_div">
+            <img src="../assets/Admission.svg" alt="">
+            <div class="">
+              <h5>Admission</h5>
+              <ul>
+                <li>Enrolment Forms</li>
+                <li>Admission Processing & Updates</li>
+                <li>School Records</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="modules_div">
-          <img src="../assets/finance.svg" alt="">
-          <div class="">
-            <h5>Finance</h5>
-            <ul>
-              <li>School Budgets</li>
-              <li>Fees Notifications and Reminders</li>
-              <li>Payment Tracking</li>
-            </ul>
+        </router-link>
+
+        <router-link role="link" to="/modules/financialmanagement">
+          <div class="modules_div">
+            <img src="../assets/finance.svg" alt="">
+            <div class="">
+              <h5>Finance</h5>
+              <ul>
+                <li>School Budgets</li>
+                <li>Fees Notifications and Reminders</li>
+                <li>Payment Tracking</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="modules_div">
-          <img src="../assets/newsletter.svg" alt="">
-          <div class="">
-            <h5>Newsletters</h5>
-            <ul>
-              <li>Custom Templates</li>
-              <li>Teacher to Parent Newsletter Design</li>
-              <li>School to Parent Newsletter Design </li>
-            </ul>
+        </router-link>
+        <router-link role="link" to="/modules/newslettermanagement">
+          <div class="modules_div">
+            <img src="../assets/newsletter.svg" alt="">
+            <div class="">
+              <h5>Newsletters</h5>
+              <ul>
+                <li>Custom Templates</li>
+                <li>Teacher to Parent Newsletter Design</li>
+                <li>School to Parent Newsletter Design </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="modules_div">
-          <img src="../assets/assets.svg" alt="">
-          <div class="">
-            <h5>Assets</h5>
-            <ul>
-              <li>Track and manage small equipment</li>
-              <li>Track and manage school resources e.g. textbooks</li>
-            </ul>
+        </router-link>
+        <router-link role="link" to="/modules/assetmanagement">
+          <div class="modules_div">
+            <img src="../assets/assets.svg" alt="">
+            <div class="">
+              <h5>Assets</h5>
+              <ul>
+                <li>Track and manage small equipment</li>
+                <li>Track and manage school resources e.g. textbooks</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="modules_div">
-          <img src="../assets/assessment.svg" alt="">
-          <div class="">
-            <h5>Assessment & Report Cards</h5>
-            <ul>
-              <li>Custom Templates</li>
-              <li>Teacher to Parent Newsletter Design</li>
-              <li>School to Parent Newsletter Design</li>
-            </ul>
+        </router-link>
+        <router-link role="link" to="/modules/assessmentmanagement">
+          <div class="modules_div">
+            <img src="../assets/assessment.svg" alt="">
+            <div class="">
+              <h5>Assessment & Report Cards</h5>
+              <ul>
+                <li>Custom Templates</li>
+                <li>Teacher to Parent Newsletter Design</li>
+                <li>School to Parent Newsletter Design</li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>

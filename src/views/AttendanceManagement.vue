@@ -1,14 +1,16 @@
 <template>
     <div>
-        <NavBar />
+        <AttendanceComponent />
+        <FooterComponent />
     </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue';
+import AttendanceComponent from '@/components/AttendanceComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
 
 export default {
-    components: { NavBar }
+    components: { FooterComponent, AttendanceComponent }
 }
 </script>
 
