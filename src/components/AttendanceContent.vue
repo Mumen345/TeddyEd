@@ -170,7 +170,7 @@ h1 {
         background: #FFFFFF;
         box-shadow: 0px 40px 30px rgba(25, 25, 46, 0.04);
         border-radius: 18px;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
