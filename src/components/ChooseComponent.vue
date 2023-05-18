@@ -2,9 +2,10 @@
   <div class="choose_container">
     <div class="headers_container">
       <h1>Why Choose TeddyEd</h1>
-      <p>TeddyEd has a user-friendly interface with intuitive features making it easy for school administrators, teachers,
-        and staff to manage student information from the time of admission, attendance, scheduling, newsletters,
-        communication and school asset management.</p>
+      <p>TeddyEd boasts a user-friendly interface that incorporates intuitive features, facilitating seamless management
+        of student information throughout various aspects of school operations. From admission and attendance to
+        scheduling, newsletters, communication, and asset management, TeddyEd simplifies the tasks for school
+        administrators, teachers, and staff.</p>
     </div>
     <div class="modules_container">
       <div v-motion-pop-visible-once :delay="200" class="first_div">
@@ -14,9 +15,9 @@
             <div class="">
               <h5>Attendance</h5>
               <ul>
-                <li>Report student’s absence</li>
-                <li>Report student’s lateness</li>
-                <li>View attendance history</li>
+                <li>Report Absence</li>
+                <li>Report Lateness</li>
+                <li>View Attendance History</li>
               </ul>
             </div>
           </div>
@@ -29,7 +30,7 @@
               <ul>
                 <li>Bus Tracking</li>
                 <li>Location Updates</li>
-                <li>View attendance history</li>
+                <li>Route Scheduling</li>
               </ul>
             </div>
           </div>
@@ -40,9 +41,9 @@
             <div class="">
               <h5>Events</h5>
               <ul>
-                <li>Teacher-led Class Events</li>
-                <li>School-wide Events</li>
-                <li>Parent Activities</li>
+                <li>Event Creation and Scheduling</li>
+                <li>RSVP Tracking and Management</li>
+                <li>Post-event Surveys and Feedback Collection</li>
               </ul>
             </div>
           </div>
@@ -66,9 +67,9 @@
             <div class="">
               <h5>Administration Portal </h5>
               <ul>
-                <li>Tracking applications</li>
-                <li>Managing interviews</li>
-                <li>Communicating with Parents</li>
+                <li>User Management and Access Control</li>
+                <li>School Event Management</li>
+                <li>Staff Scheduling and Management</li>
               </ul>
             </div>
           </div>
@@ -110,9 +111,9 @@
             <div class="">
               <h5>Newsletters</h5>
               <ul>
-                <li>Custom Templates</li>
-                <li>Teacher to Parent Newsletter Design</li>
-                <li>School to Parent Newsletter Design </li>
+                <li>Newsletter Creation and Design Templates</li>
+                <li>Content Creation and Editing Tools</li>
+                <li>Subscription Management</li>
               </ul>
             </div>
           </div>
@@ -123,8 +124,9 @@
             <div class="">
               <h5>Assets</h5>
               <ul>
-                <li>Track and manage small equipment</li>
-                <li>Track and manage school resources e.g. textbooks</li>
+                <li>Inventory Tracking and Management</li>
+                <li>Asset Allocation and Tracking</li>
+                <li>Maintenance and Repair Management</li>
               </ul>
             </div>
           </div>
@@ -135,9 +137,9 @@
             <div class="">
               <h5>Assessment & Report Cards</h5>
               <ul>
-                <li>Custom Templates</li>
-                <li>Teacher to Parent Newsletter Design</li>
-                <li>School to Parent Newsletter Design</li>
+                <li>Grading and Assessment tools</li>
+                <li>Report Card Creation</li>
+                <li>Student Progress Tracking and Reporting</li>
               </ul>
             </div>
           </div>
@@ -216,7 +218,8 @@ h5 {
   gap: 10px;
   background-color: #ffffff;
   padding-left: 10px;
-  padding-top: 10px;
+  padding-right: 15px;
+  padding-top: 15px;
   box-shadow: 0px 5.09954px 12.7488px rgba(64, 79, 104, 0.05);
   border-radius: 15px;
   height: 145px;
@@ -370,6 +373,7 @@ h5 {
     font-size: 13px;
     font-family: nunitoSemiBold;
     width: auto;
+    /* text-transform: capitalize; */
 
   }
 

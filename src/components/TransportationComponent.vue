@@ -4,9 +4,8 @@
         <div class="what_container">
             <div class="first_div">
                 <h1>{{ header }}</h1>
-                <p>{{ subHeader }}</p>
-                <p>{{ subHeader2 }}</p>
-                <p>{{ subHeader3 }}</p>
+                <p>{{ subHeader }} <br> <span>{{ subHeader2 }}</span></p>
+                <!-- <p>{{ subHeader2 }}</p> -->
                 <img :src="image" alt="people svg" srcset="">
                 <button @click.prevent="go" class="primaryButton first_div_button">Request
                     Information</button>
@@ -29,48 +28,47 @@ import NavBar from '@/components/NavBar.vue';
 export default {
     data() {
         return {
-            header: "Assessment and Report Card Management",
-            subHeader: "TeddyEd's Assessment and Report Card Management module can help schools to manage assessments and report cards more efficiently and effectively.",
-            subHeader2: "The assessment creation and grading features save teachers time and reduce the risk of errors, while the report card generation and customization features ensure that report cards are tailored to the needs of the school.",
-            subHeader3: "The parent access feature allows parents to stay informed about their child's progress and performance, while the analytics and insights provide valuable data for teachers and administrators to track and improve student performance over time",
-            image: require('../assets/student9.svg'),
+            header: "Transportation Management",
+            subHeader: "TeddyEd's busing module provides a comprehensive solution for managing school transportation planning & operations, from automated routing and scheduling to real-time GPS tracking, safety features, and communication management.",
+            subHeader2: "By streamlining transportation operations, TeddyEd can help schools improve efficiency, ensure the safety and security of students while they are being transported to and from school., and communicate with parents and guardians.",
+            image: require('../assets/student5.svg'),
             items:
                 [
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Assessment Creation",
-                        message: "TeddyEd's Assessment and Report Card Management module allows teachers to create assessments, specifying details such as the type of assessment, the date, and the grading scale.",
+                        link: require('../assets/transportation.svg'),
+                        headers: "Route Planning and Scheduling",
+                        message: "TeddyEd's transportation module allows schools to plan and schedule transportation routes for students, including pickup and drop-off times, locations, and bus numbers.",
                     },
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Assessment Grading",
-                        message: "TeddyEd's Assessment and Report Card Management module allows teachers to grade assessments online, saving time and reducing the risk of errors.",
+                        link: require('../assets/transportation.svg'),
+                        headers: "Real-time GPS Tracking",
+                        message: "TeddyEd's transportation module can be integrated with GPS tracking systems, allowing schools to track the location of buses and ensure that they are running on schedule.",
                     },
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Report Card Generation",
-                        message: "TeddyEd's Assessment and Report Card Management module includes a report card generation feature, allowing teachers to create report cards for students based on their assessment results.",
+                        link: require('../assets/transportation.svg'),
+                        headers: "Automated Parent Notifications",
+                        message: "TeddyEd's transportation module can send automated notifications to parents and guardians regarding bus routes and schedules, helping to keep them informed and engaged.",
                     },
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Report Card Templates",
-                        message: "TeddyEd's Assessment and Report Card Management module includes report card templates, allowing schools to customize the look and feel of report cards according to their needs.",
+                        link: require('../assets/transportation.svg'),
+                        headers: "Driver and Vehicle Management",
+                        message: "TeddyEd's transportation module allows schools to manage drivers and vehicles, including tracking driver certifications, vehicle maintenance, and fuel usage.",
                     },
 
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Parent Access",
-                        message: "TeddyEd's Assessment and Report Card Management module includes parent access, allowing parents to view their child's assessment results and report cards online.",
+                        link: require('../assets/transportation.svg'),
+                        headers: "Emergency Management",
+                        message: "TeddyEd's transportation module includes safety features, such as the ability to set up bus stop locations and create passenger manifests, as well as emergency management features such as the ability to quickly locate and contact buses in the event of an emergency",
                     },
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Analytics and Insights",
-                        message: "TeddyEd's Assessment and Report Card Management module includes analytics and insights, allowing schools to track student performance over time and identify trends and patterns.",
+                        link: require('../assets/transportation.svg'),
+                        headers: "Communication Management",
+                        message: "TeddyEd's transportation module features a communication module, allowing schools to communicate with parents and guardians regarding transportation issues, such as delays or changes to bus routes.",
                     },
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Historical Attendance Records",
-                        message: "TeddyEd's attendance module stores historical attendance records, allowing schools to track long-term attendance trends and identify areas for improvement.",
+                        link: require('../assets/transportation.svg'),
+                        headers: "Historical Transportation Records",
+                        message: "TeddyEd's transportation module stores historical transportation records, allowing schools to track transportation trends and identify areas for improvement.",
 
                     },
 
@@ -106,14 +104,14 @@ export default {
 .first_div {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 20px;
     width: 40%;
 }
 
 h1 {
     font-family: nunitoBlack;
     font-weight: 800;
-    line-height: 45s px;
+    line-height: 45px;
     letter-spacing: 0.035em;
     text-align: left;
     color: #33357D;

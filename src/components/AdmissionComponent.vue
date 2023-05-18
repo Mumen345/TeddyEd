@@ -27,46 +27,46 @@ import NavBar from '@/components/NavBar.vue';
 export default {
     data() {
         return {
-            header: "Assessment and Report Card Management",
-            subHeader: "TeddyEd's Assessment and Report Card Management module can help schools to manage assessments and report cards more efficiently and effectively. The assessment creation and grading features save teachers time and reduce the risk of errors, while the report card generation and customization features ensure that report cards are tailored to the needs of the school. The parent access feature allows parents to stay informed about their child's progress and performance, while the analytics and insights provide valuable data for teachers and administrators to track and improve student performance over time",
+            header: "Admissions Management",
+            subHeader: "TeddyEd's admissions and enrolment management module makes it easy for schools to manage the admissions process. This includes tracking applications, managing interviews, and communicating with prospective students and parents.",
             image: require('../assets/student7.svg'),
             items:
                 [
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Assessment Creation",
-                        message: "TeddyEd's Assessment and Report Card Management module allows teachers to create assessments, specifying details such as the type of assessment, the date, and the grading scale.",
+                        link: require('../assets/Admission.svg'),
+                        headers: "Online Application",
+                        message: "TeddyEd's admissions module allows schools to create and customize online applications, making it easy for parents and students to join a waitlist and apply for admission to the school.",
                     },
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Assessment Grading",
-                        message: "TeddyEd's Assessment and Report Card Management module allows teachers to grade assessments online, saving time and reducing the risk of errors.",
+                        link: require('../assets/Admission.svg'),
+                        headers: "Application Tracking",
+                        message: "TeddyEd's admissions module also allows schools to track and manage applications in real-time, ensuring that no applications are missed or overlooked.",
                     },
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Report Card Generation",
-                        message: "TeddyEd's Assessment and Report Card Management module includes a report card generation feature, allowing teachers to create report cards for students based on their assessment results.",
+                        link: require('../assets/Admission.svg'),
+                        headers: "Interview Scheduling",
+                        message: "TeddyEd's admissions module allows schools to schedule and manage admissions interviews and tests, making it easy to coordinate with parents and students.",
                     },
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Report Card Templates",
-                        message: "TeddyEd's Assessment and Report Card Management module includes report card templates, allowing schools to customize the look and feel of report cards according to their needs.",
+                        link: require('../assets/Admission.svg'),
+                        headers: "Automated Communications",
+                        message: "TeddyEd's admissions module can send automated emails and notifications to parents and students, keeping them informed about the status of their application and the admissions process.",
                     },
 
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Parent Access",
-                        message: "TeddyEd's Assessment and Report Card Management module includes parent access, allowing parents to view their child's assessment results and report cards online.",
+                        link: require('../assets/Admission.svg'),
+                        headers: "Admission Decision Management",
+                        message: "TeddyEd's admissions module allows schools to manage admission decisions, including acceptances, waitlists, and rejections.",
                     },
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Analytics and Insights",
-                        message: "TeddyEd's Assessment and Report Card Management module includes analytics and insights, allowing schools to track student performance over time and identify trends and patterns.",
+                        link: require('../assets/Admission.svg'),
+                        headers: "Enrollment Management",
+                        message: "TeddyEd's enrolment module allows schools to manage the enrolment process, including gathering and storing student information, generating enrolment contracts, and tracking student enrolment status.",
                     },
                     {
-                        link: require('../assets/assessment.svg'),
-                        headers: "Historical Attendance Records",
-                        message: "TeddyEd's attendance module stores historical attendance records, allowing schools to track long-term attendance trends and identify areas for improvement.",
+                        link: require('../assets/Admission.svg'),
+                        headers: "Document Management",
+                        message: "TeddyEd's enrolment module also allows schools to manage student information and documents, such as medical records and emergency contact information, ensuring that all relevant information is easily accessible and up-to-date.",
 
                     },
 

@@ -3,7 +3,7 @@
         <div class="content_div">
             <img src="../assets/footer_logo.svg" alt="footer_img" srcset="">
             <div>
-                <p>An intuitive software that helps your school administration team manage its peripheal services and
+                <p>An intuitive software that helps your school administration team manage its peripheral services and
                     operations
                 </p>
                 <p>COPYRIGHT (C) 2023</p>
