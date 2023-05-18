@@ -60,7 +60,7 @@
             </div>
           </div>
         </router-link>
-        <router-link role="link" to="/modules/assetmanagement">
+        <router-link role="link" to="/modules/administrationportalmanagement">
           <div class="modules_div">
             <img src="../assets/admin_portal.svg" alt="">
             <div class="">
