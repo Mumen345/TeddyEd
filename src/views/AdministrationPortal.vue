@@ -1,14 +1,14 @@
 <template>
     <div>
-        <NavBar />
+        <AdministrationComponent />
     </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue';
+import AdministrationComponent from '@/components/AdministrationComponent.vue';
 
 export default {
-    components: { NavBar }
+    components: { AdministrationComponent }
 }
 </script>
 
