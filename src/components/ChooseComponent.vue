@@ -323,6 +323,9 @@ h5 {
 
 @media screen and (max-width: 590px) {
 
+  a {
+    width: 100%;
+  }
 
   .choose_container {
     width: 100% !important;
