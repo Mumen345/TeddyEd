@@ -59,7 +59,7 @@ export default {
                         link: require('../assets/modules/7.svg'),
                         headers: "Admissions Management",
                         message: "TeddyEd's admissions and enrolment management module makes it easy for schools to...",
-                        button: "/modules/assessmentmanagement",
+                        button: "/modules/admissionmanagement",
 
                     },
 
@@ -75,7 +75,7 @@ export default {
                         link: require('../assets/modules/9.svg'),
                         headers: "Assessment and Report Card Management",
                         message: "TeddyEd's Assessment and Report Card Management module is designed to help...",
-                        button: "/modules/transportmanagement",
+                        button: "/modules/assessmentmanagement",
 
                     },
                     {
