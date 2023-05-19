@@ -29,7 +29,7 @@ import NavBar from '@/components/NavBar.vue';
 export default {
     data() {
         return {
-            header: "Administration Portal",
+            header: "Assset Management",
             subHeader: "TeddyEd's Asset Management module can help schools manage their assets more efficiently and effectively. ",
             subHeader2: "The asset tracking and checkout features help to ensure that assets are properly accounted for and used for their intended purpose, while the maintenance scheduling feature helps to extend the life of assets and reduce the need for expensive repairs or replacements. The asset reports and depreciation tracking features help schools to plan for asset replacement and budgeting, while the barcode scanning feature helps to streamline asset tracking and management.",
             subHeader3: "Overall, TeddyEd's Asset Management module can help schools to save time and money, while ensuring that their assets are properly managed and maintained.",
