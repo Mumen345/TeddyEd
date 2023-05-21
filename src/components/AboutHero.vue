@@ -4,11 +4,11 @@
             <NavBar />
         </div>
         <div class="about_header">
-            <h1>Single repository for student, teaching and administrative staff.</h1>
+            <h1>Single repository for teaching and administrative staff routine operations.</h1>
             <p>TeddyEd is an innovative and comprehensive school management system designed to streamline administrative and
                 operational tasks within a school environment.</p>
         </div>
-        <div class="hero_img"><img src="../assets/hero_img.png" alt="" srcset=""></div>
+        <div class="hero_img"><img src="../assets/hero_img33.jpg" alt="" srcset=""></div>
     </div>
 </template>
 
