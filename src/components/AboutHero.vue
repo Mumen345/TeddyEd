@@ -8,7 +8,7 @@
             <p>TeddyEd is an innovative and comprehensive school management system designed to streamline administrative and
                 operational tasks within a school environment.</p>
         </div>
-        <div class="hero_img"><img src="../assets/hero_img33.jpg" alt="" srcset=""></div>
+        <div class="hero_img"><img src="../assets/hero_img.jpg" alt="" srcset=""></div>
     </div>
 </template>
 
