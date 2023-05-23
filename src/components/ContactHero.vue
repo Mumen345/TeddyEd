@@ -5,17 +5,12 @@
             <div class="info_div">
                 <img src="../assets/address.svg" alt="location img">
                 <h5>Address</h5>
-                <p>Ajax ON L1S 7R4</p>
-            </div>
-            <div class="info_div">
-                <img src="../assets/smartphone.svg" alt="location img">
-                <h5>Call Us</h5>
-                <p><a href="tel:+1 647 470 6921">+1 647 470 6921</a></p>
+                <p>Ajax ON, Canada</p>
             </div>
             <div class="info_div">
                 <img src="../assets/letter.svg" alt="location img">
-                <h5>Email</h5>
-                <p> <a href="mailto:contact.this@example.com">contact.this@example.com</a> </p>
+                <h5>Email Us</h5>
+                <p> <a href="mailto:inquiries@teddyed.tech">inquiries@teddyed.tech</a></p>
             </div>
         </div>
         <InputComponents />
