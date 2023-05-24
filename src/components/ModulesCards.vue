@@ -26,8 +26,8 @@ export default {
                     },
                     {
                         link: require('../assets/modules/2.svg'),
-                        headers: "Communication",
-                        message: "TeddyEd provides a comprehensive transportation management module, allowing schools to manage...",
+                        headers: "Communications Management",
+                        message: " TeddyEd provides a comprehensive communications module, allowing schools to... ",
                         button: "/modules/communicationsmanagement",
                     },
                     {
@@ -39,20 +39,20 @@ export default {
                     {
                         link: require('../assets/modules/3.svg'),
                         headers: "Administration Portal",
-                        message: "TeddyEd provides a comprehensive communications module, allowing schools to...",
+                        message: "TeddyEd's admin portal provides a powerful tool for managing school operations, ensuring...",
                         button: "/modules/administrationportalmanagement",
                     },
 
                     {
                         link: require('../assets/modules/5.svg'),
                         headers: "Transportation Management",
-                        message: "TeddyEd's admin portal provides a powerful tool for managing school operations, ensuring...",
+                        message: "TeddyEd provides a comprehensive transportation management module, allowing schools to manage...",
                         button: "/modules/transportmanagement",
                     },
                     {
                         link: require('../assets/modules/6.svg'),
                         headers: "Asset Management",
-                        message: "TeddyEd's easy-to-use newsletter creation tool allows schools to create and distribute ...",
+                        message: "TeddyEd's asset management module helps schools to track and manage their...",
                         button: "/modules/assetmanagement",
                     },
                     {
@@ -66,7 +66,7 @@ export default {
                     {
                         link: require('../assets/modules/8.svg'),
                         headers: "Newsletter Management",
-                        message: "TeddyEd's asset management module helps schools to track and manage their...",
+                        message: "TeddyEd's easy-to-use newsletter creation tool allows schools to create and distribute...",
                         button: "/modules/newslettermanagement",
                     },
 
